@@ -1,0 +1,221 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  background-color: #badfdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2em;
+}
+
+.panel {
+  background-color: #fcf9ea;
+  border-radius: 1em;
+  padding: 1em 2em;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.plans {
+  border-bottom: 1px solid #e1f1ff;
+  background-color: #fcf9ea;
+  margin-top: 1em;
+  
+  
+}
+.plans:last-child {
+  border-bottom: none;
+}
+.plans-image {
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #3c467b;
+}
+.features {
+  /* letter-spacing: ; */
+  margin: 50px 0 25px;
+  color: #50589c;
+}
+.features li {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #e1f1ff;
+}
+
+.plans span {
+  color: #3c467b;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+.features li:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+.pricing-button {
+  border: 1px solid #000000;
+  border-radius: 0.3em;
+  color: black;
+  display: inline-block;
+  padding: 0.7em 0.5em;
+  text-decoration: none;
+  margin: 1em 0;
+  transition: background-color 200ms ease-in-out;
+}
+.pricing-button:hover {
+  background-color: #3c467b70;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+  .plans {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 1em 2em;
+    border-radius: none;
+  }
+  .plans:last-child{
+    border-right: none;
+  }
+}
